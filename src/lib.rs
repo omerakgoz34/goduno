@@ -1,23 +1,9 @@
 use gdnative::prelude::*;
 
-#[derive(NativeClass)]
-#[inherit(Node)]
-pub struct Main;
-
-#[methods]
-impl Main {
-    fn new(_owner: &Node) -> Self {
-        return Main;
-    }
-
-    #[export]
-    fn _ready(&self, _owner: &Node) {
-        godot_print!("I'm from the script of the \"main\" scene.");
-    }
-}
+mod scene_main;
 
 fn init(handle: InitHandle) {
-    handle.add_class::<Main>();
+    handle.add_class::<scene_main::SceneMain>();
 }
 
 godot_init!(init);

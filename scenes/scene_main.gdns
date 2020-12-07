@@ -3,6 +3,6 @@
 [ext_resource path="res://goduno.gdnlib" type="GDNativeLibrary" id=1]
 
 [resource]
-resource_name = "Main"
-class_name = "Main"
+resource_name = "SceneMain"
+class_name = "SceneMain"
 library = ExtResource( 1 )
