@@ -7,7 +7,7 @@ reloadable=true
 
 [entry]
 
-Windows.64="res://goduno.dll"
+Windows.64="res://target/debug/goduno.dll"
 
 [dependencies]
 
